@@ -1,6 +1,6 @@
 {
   "@@locale": "ru",
-  "allNotes": "All notes",
-  "newNote": "New Note",
-  "notesnumberNotes": "{_notesNumber} notes"
+  "allNotes": "Мои записки",
+  "newNote": "Новая записка",
+  "notesnumberNotes": "Всего записок: {notesNumber}"
 }

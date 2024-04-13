@@ -1,16 +1,36 @@
-# mobile
+# Notes App
 
-A new Flutter project.
+This mobile application allows you to create notes, specifying a title and optional description, view your notes, edit and delete them.
 
-## Getting Started
+## Technologies
 
-This project is a starting point for a Flutter application.
+- Dart
+- Flutter
+- dio
+- bloc
 
-A few resources to get you started if this is your first Flutter project:
+## Run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1. Clone and set up the backend
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/urban-potato/notes-app-backend
+
+### 2. Install the libraries
+
+In the main project directory run:
+
+```
+flutter pub get
+```
+
+### 3. Run the project
+
+## Backend
+
+https://github.com/urban-potato/notes-app-backend
+
+## Interface preview
+
+### Notes screen
+
+![products screen](https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/notes_list_screen.png?raw=true)
