@@ -1,1 +1,6 @@
-{}
+{
+  "@@locale": "ru",
+  "allNotes": "All notes",
+  "newNote": "New Note",
+  "notesnumberNotes": "{_notesNumber} notes"
+}

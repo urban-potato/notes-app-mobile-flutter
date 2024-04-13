@@ -1,1 +1,6 @@
-{}
+{
+  "@@locale": "en",
+  "allNotes": "All notes",
+  "newNote": "New Note",
+  "notesnumberNotes": "{notesNumber} notes"
+}

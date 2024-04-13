@@ -49,6 +49,36 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `All notes`
+  String get allNotes {
+    return Intl.message(
+      'All notes',
+      name: 'allNotes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Note`
+  String get newNote {
+    return Intl.message(
+      'New Note',
+      name: 'newNote',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `{notesNumber} notes`
+  String notesnumberNotes(Object notesNumber) {
+    return Intl.message(
+      '$notesNumber notes',
+      name: 'notesnumberNotes',
+      desc: '',
+      args: [notesNumber],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
