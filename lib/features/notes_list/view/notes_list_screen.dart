@@ -58,9 +58,9 @@ class _NotesListScreenState extends State<NotesListScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _notesNumberText(context),
+            _NotesNumberText(notesList: notesList),
             const SizedBox(height: 10),
-            _notesTilesList()
+            _NotesTilesList(notesList: notesList)
           ],
         ),
       ),
@@ -71,8 +71,18 @@ class _NotesListScreenState extends State<NotesListScreen> {
       ),
     );
   }
+}
 
-  Expanded _notesTilesList() {
+class _NotesTilesList extends StatelessWidget {
+  const _NotesTilesList({
+    super.key,
+    required this.notesList,
+  });
+
+  final List<Note> notesList;
+
+  @override
+  Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
         itemCount: notesList.length,
@@ -84,8 +94,18 @@ class _NotesListScreenState extends State<NotesListScreen> {
       ),
     );
   }
+}
 
-  Text _notesNumberText(BuildContext context) {
+class _NotesNumberText extends StatelessWidget {
+  const _NotesNumberText({
+    super.key,
+    required this.notesList,
+  });
+
+  final List<Note> notesList;
+
+  @override
+  Widget build(BuildContext context) {
     return Text(
       S.of(context).notesnumberNotes(notesList.length),
       style: Theme.of(context).textTheme.bodySmall,

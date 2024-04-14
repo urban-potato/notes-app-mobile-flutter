@@ -17,55 +17,105 @@ class NoteTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         color: AppColors.secondaryDark,
       ),
-      child: _noteInfo(context),
+      child: _NoteInfo(note: note),
     );
   }
+}
 
-  ListTile _noteInfo(BuildContext context) {
+class _NoteInfo extends StatelessWidget {
+  const _NoteInfo({
+    super.key,
+    required this.note,
+  });
+
+  final Note note;
+
+  @override
+  Widget build(BuildContext context) {
     return ListTile(
       contentPadding: const EdgeInsets.all(0),
-      title: _noteTitle(context),
-      subtitle: _noteDescriptionAndTime(context),
+      title: _NoteTitle(title: note.title),
+      subtitle: _NoteDescriptionAndTime(note: note),
       trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 26),
       onTap: () {},
     );
   }
+}
 
-  Padding _noteTitle(BuildContext context) {
+class _NoteTitle extends StatelessWidget {
+  const _NoteTitle({
+    super.key,
+    required this.title,
+  });
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Text(
-        note.title,
+        title,
         style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontSize: 20),
       ),
     );
   }
+}
 
-  Column _noteDescriptionAndTime(BuildContext context) {
+class _NoteDescriptionAndTime extends StatelessWidget {
+  const _NoteDescriptionAndTime({
+    super.key,
+    required this.note,
+  });
+
+  final Note note;
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _noteDescription(context),
+        _NoteDescription(description: note.description),
         const SizedBox(height: 7),
-        _noteTime(context),
+        _NoteTime(dateTime: note.dateTime)
       ],
     );
   }
+}
 
-  Text _noteDescription(BuildContext context) {
+class _NoteDescription extends StatelessWidget {
+  const _NoteDescription({
+    super.key,
+    required this.description,
+  });
+
+  final String description;
+
+  @override
+  Widget build(BuildContext context) {
     return Text(
-      note.description,
+      description,
       style: Theme.of(context).textTheme.bodySmall?.copyWith(fontSize: 18),
     );
   }
+}
 
-  Row _noteTime(BuildContext context) {
+class _NoteTime extends StatelessWidget {
+  const _NoteTime({
+    super.key,
+    required this.dateTime,
+  });
+
+  final String dateTime;
+
+  @override
+  Widget build(BuildContext context) {
     return Row(
       children: [
         const Icon(Icons.alarm, size: 20),
         const SizedBox(width: 6),
         Text(
-          note.dateTime,
+          dateTime,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(fontSize: 15),
         ),
       ],
