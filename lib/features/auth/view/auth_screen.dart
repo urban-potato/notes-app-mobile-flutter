@@ -1,9 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
 import 'package:notes_app/constants/constants.dart';
 import 'package:notes_app/generated/l10n.dart';
-import 'package:notes_app/main.dart';
 import 'package:notes_app/router/router.dart';
 
 @RoutePage()
