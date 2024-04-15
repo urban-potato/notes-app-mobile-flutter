@@ -1,8 +1,10 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:notes_app/features/notes_list/widgets/note_tile.dart';
 import 'package:notes_app/generated/l10n.dart';
 import 'package:notes_app/repositories/notes/models/note.dart';
 
+@RoutePage()
 class NotesListScreen extends StatefulWidget {
   const NotesListScreen({super.key});
 

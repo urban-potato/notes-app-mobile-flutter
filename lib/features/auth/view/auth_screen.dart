@@ -1,7 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:notes_app/constants/constants.dart';
 import 'package:notes_app/generated/l10n.dart';
+import 'package:notes_app/main.dart';
+import 'package:notes_app/router/router.dart';
 
+@RoutePage()
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
 
@@ -59,6 +64,10 @@ class __AuthFormState extends State<_AuthForm> {
     }
 
     setState(() {});
+
+    if (errorUsername == null && errorPassword == null) {
+      AutoRouter.of(context).replace(const NotesListRoute());
+    }
   }
 
   @override
