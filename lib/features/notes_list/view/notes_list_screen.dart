@@ -108,7 +108,7 @@ class _NotesNumberText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       S.of(context).notesnumberNotes(notesList.length),
-      style: Theme.of(context).textTheme.bodySmall,
+      style: Theme.of(context).textTheme.titleSmall,
     );
   }
 }

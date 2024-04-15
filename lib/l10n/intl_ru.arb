@@ -2,5 +2,14 @@
   "@@locale": "ru",
   "allNotes": "Мои записки",
   "newNote": "Новая записка",
-  "notesnumberNotes": "Всего записок: {notesNumber}"
+  "notesnumberNotes": "Всего записок: {notesNumber}",
+  "signIn": "Вход",
+  "username": "Логин",
+  "password": "Пароль",
+  "register": "Register",
+  "signUp": "Зарегистрируйтесь",
+  "logIn": "Вход",
+  "dontHaveAnAccount": "Нет аккаунта?",
+  "incorrectUsername": "Неверный логин",
+  "incorrectPassword": "Неверный пароль"
 }

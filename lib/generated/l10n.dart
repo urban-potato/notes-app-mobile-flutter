@@ -55,7 +55,7 @@ class S {
     return Intl.message(
       'All notes',
       name: 'allNotes',
-      desc: '',
+      desc: 'AppBar message on Notes List Screen',
       args: [],
     );
   }
@@ -71,12 +71,102 @@ class S {
   }
 
   /// `{notesNumber} notes`
-  String notesnumberNotes(Object notesNumber) {
+  String notesnumberNotes(int notesNumber) {
     return Intl.message(
       '$notesNumber notes',
       name: 'notesnumberNotes',
-      desc: '',
+      desc: 'A message telling the user number of their notes',
       args: [notesNumber],
+    );
+  }
+
+  /// `Sign in`
+  String get signIn {
+    return Intl.message(
+      'Sign in',
+      name: 'signIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Username`
+  String get username {
+    return Intl.message(
+      'Username',
+      name: 'username',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message(
+      'Register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up`
+  String get signUp {
+    return Intl.message(
+      'Sign up',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log in`
+  String get logIn {
+    return Intl.message(
+      'Log in',
+      name: 'logIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don''t have an account?`
+  String get dontHaveAnAccount {
+    return Intl.message(
+      'Don\'\'t have an account?',
+      name: 'dontHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorrect username`
+  String get incorrectUsername {
+    return Intl.message(
+      'Incorrect username',
+      name: 'incorrectUsername',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incorrect password`
+  String get incorrectPassword {
+    return Intl.message(
+      'Incorrect password',
+      name: 'incorrectPassword',
+      desc: '',
+      args: [],
     );
   }
 }

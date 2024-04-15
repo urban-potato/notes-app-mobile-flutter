@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/constants/constants.dart';
 
 final darkTheme = ThemeData(
-  // colorScheme: ColorScheme.fromSeed(seedColor: AppColors.mainGreen),
+  colorScheme: ColorScheme.fromSeed(seedColor: AppColors.mainGreen),
   useMaterial3: true,
   scaffoldBackgroundColor: AppColors.mainDark,
   floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -20,31 +20,29 @@ final darkTheme = ThemeData(
   listTileTheme: ListTileThemeData(
     iconColor: AppColors.secondaryTextDark,
   ),
+  // buttonTheme: ButtonThemeData(
+  //   textTheme: ButtonTextTheme.normal,
+  // ),
   textTheme: TextTheme(
-    bodyLarge: TextStyle(
+    titleLarge: TextStyle(
       color: AppColors.mainTextDark,
       fontWeight: FontWeight.w500,
       fontSize: 28,
     ),
-    bodySmall: TextStyle(
+    titleMedium: TextStyle(
+      color: AppColors.mainTextDark,
+      fontWeight: FontWeight.w500,
+      fontSize: 20,
+    ),
+    titleSmall: TextStyle(
       color: AppColors.secondaryTextDark,
       fontWeight: FontWeight.w500,
       fontSize: 16,
     ),
-    // bodyMedium: const TextStyle(
-    //   color: Colors.white,
-    //   fontWeight: FontWeight.w500,
-    //   fontSize: 20,
-    // ),
-    // labelSmall: TextStyle(
-    //   color: Colors.white.withOpacity(0.6),
-    //   fontWeight: FontWeight.w700,
-    //   fontSize: 14,
-    // ),
-    // headlineMedium: const TextStyle(
-    //   color: Colors.white,
-    //   fontWeight: FontWeight.w500,
-    //   fontSize: 20,
-    // ),
+    bodyMedium: TextStyle(
+      color: AppColors.thirdTextDark,
+      fontWeight: FontWeight.w400,
+      fontSize: 20,
+    ),
   ),
 );

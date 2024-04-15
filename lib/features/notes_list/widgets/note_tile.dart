@@ -56,7 +56,7 @@ class _NoteTitle extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 10),
       child: Text(
         title,
-        style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontSize: 20),
+        style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 20),
       ),
     );
   }
@@ -95,7 +95,7 @@ class _NoteDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       description,
-      style: Theme.of(context).textTheme.bodySmall?.copyWith(fontSize: 18),
+      style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 18),
     );
   }
 }
@@ -116,7 +116,7 @@ class _NoteTime extends StatelessWidget {
         const SizedBox(width: 6),
         Text(
           dateTime,
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(fontSize: 15),
+          style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 15),
         ),
       ],
     );

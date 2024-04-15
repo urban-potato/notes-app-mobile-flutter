@@ -34,3 +34,7 @@ https://github.com/urban-potato/notes-app-backend
 ### Notes screen
 
 ![products screen](https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/notes_list_screen.png?raw=true)
+
+### Sign in screen
+
+![products screen](https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/sign_in_screen.png?raw=true)

@@ -1,6 +1,27 @@
 {
   "@@locale": "en",
   "allNotes": "All notes",
+  "@allNotes": {
+    "description": "AppBar message on Notes List Screen"
+  },
   "newNote": "New Note",
-  "notesnumberNotes": "{notesNumber} notes"
+  "notesnumberNotes": "{notesNumber} notes",
+  "@notesnumberNotes": {
+    "description": "A message telling the user number of their notes",
+    "placeholders": {
+      "notesNumber": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "signIn": "Sign in",
+  "username": "Username",
+  "password": "Password",
+  "register": "Register",
+  "signUp": "Sign up",
+  "logIn": "Log in",
+  "dontHaveAnAccount": "Don''t have an account?",
+  "incorrectUsername": "Incorrect username",
+  "incorrectPassword": "Incorrect password"
 }
