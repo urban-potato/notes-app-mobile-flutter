@@ -12,3 +12,9 @@ abstract class AppColors {
   static Color secondaryTextDark = const Color(0xFF939393);
   static Color thirdTextDark = const Color(0xFFC9C9C9);
 }
+
+abstract class AppMeasures {
+  static double padding(BuildContext context) {
+    return MediaQuery.of(context).size.width * 0.075;
+  }
+}
