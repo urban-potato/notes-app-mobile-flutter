@@ -31,10 +31,16 @@ https://github.com/urban-potato/notes-app-backend
 
 ## Interface preview
 
-### Notes screen
-
-![products screen](https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/notes_list_screen.png?raw=true)
-
 ### Sign in screen
 
-![products screen](https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/sign_in_screen.png?raw=true)
+<img alt="sign in screen" src="https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/sign_in_screen.png?raw=true" width="300">
+
+### Notes screen
+
+|                                                                         Notes screen (no notes)                                                                          |                                                                     Notes screen (has notes)                                                                     |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <img alt="notes screen (no notes)" src="https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/notes_list_screen_no_notes.png?raw=true" width="300"> | <img alt="notes screen (has notes)" src="https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/notes_list_screen.png?raw=true" width="300"> |
+
+### Note screen
+
+<img alt="note screen" src="https://github.com/urban-potato/notes-app-mobile-flutter/blob/main/preview/note_screen.png?raw=true" width="300">
