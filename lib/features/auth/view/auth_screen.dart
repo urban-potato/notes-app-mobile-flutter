@@ -38,8 +38,8 @@ class _AuthForm extends StatefulWidget {
 }
 
 class __AuthFormState extends State<_AuthForm> {
-  final usernameTextController = TextEditingController();
-  final passwordTextController = TextEditingController();
+  final usernameTextController = TextEditingController(text: 'admin');
+  final passwordTextController = TextEditingController(text: 'admin');
   String? errorUsername;
   String? errorPassword;
 
@@ -130,6 +130,11 @@ class __AuthFormState extends State<_AuthForm> {
                   controller: usernameTextController,
                   decoration: textFieldDecoration,
                   style: Theme.of(context).textTheme.bodyMedium,
+                  keyboardAppearance: Brightness.dark,
+                  textInputAction: TextInputAction.next,
+                  onTapOutside: (PointerDownEvent event) {
+                    FocusManager.instance.primaryFocus?.unfocus();
+                  },
                 ),
               ],
             ),
@@ -147,7 +152,14 @@ class __AuthFormState extends State<_AuthForm> {
                   controller: passwordTextController,
                   decoration: textFieldDecoration,
                   style: Theme.of(context).textTheme.bodyMedium,
+                  keyboardAppearance: Brightness.dark,
                   obscureText: true,
+                  autocorrect: false,
+                  enableSuggestions: false,
+                  textInputAction: TextInputAction.done,
+                  onTapOutside: (PointerDownEvent event) {
+                    FocusManager.instance.primaryFocus?.unfocus();
+                  },
                 ),
               ],
             ),
