@@ -21,6 +21,16 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const AuthScreen(),
       );
     },
+    NoteRoute.name: (routeData) {
+      final args = routeData.argsAs<NoteRouteArgs>();
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: NoteScreen(
+          key: args.key,
+          id: args.id,
+        ),
+      );
+    },
     NotesListRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -42,6 +52,43 @@ class AuthRoute extends PageRouteInfo<void> {
   static const String name = 'AuthRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [NoteScreen]
+class NoteRoute extends PageRouteInfo<NoteRouteArgs> {
+  NoteRoute({
+    Key? key,
+    required int id,
+    List<PageRouteInfo>? children,
+  }) : super(
+          NoteRoute.name,
+          args: NoteRouteArgs(
+            key: key,
+            id: id,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'NoteRoute';
+
+  static const PageInfo<NoteRouteArgs> page = PageInfo<NoteRouteArgs>(name);
+}
+
+class NoteRouteArgs {
+  const NoteRouteArgs({
+    this.key,
+    required this.id,
+  });
+
+  final Key? key;
+
+  final int id;
+
+  @override
+  String toString() {
+    return 'NoteRouteArgs{key: $key, id: $id}';
+  }
 }
 
 /// generated route for

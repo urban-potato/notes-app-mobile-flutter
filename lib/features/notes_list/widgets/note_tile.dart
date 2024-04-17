@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:notes_app/constants/constants.dart';
 import 'package:notes_app/repositories/notes/models/note.dart';
+import 'package:notes_app/router/router.dart';
 
 class NoteTile extends StatelessWidget {
   const NoteTile({super.key, required this.note});
@@ -37,7 +39,9 @@ class _NoteInfo extends StatelessWidget {
       title: _NoteTitle(title: note.title),
       subtitle: _NoteDescriptionAndTime(note: note),
       trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 26),
-      onTap: () {},
+      onTap: () {
+        AutoRouter.of(context).push(NoteRoute(id: note.id));
+      },
     );
   }
 }
