@@ -3,6 +3,15 @@
   "allNotes": "Мои записки",
   "newNote": "Новая записка",
   "notesnumberNotes": "Всего записок: {notesNumber}",
+  "@notesnumberNotes": {
+    "description": "Сообщение, сообщающее пользователю количество его заметок",
+    "placeholders": {
+      "notesNumber": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
   "signIn": "Вход",
   "username": "Логин",
   "password": "Пароль",
