@@ -25,19 +25,29 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "allNotes": MessageLookupByLibrary.simpleMessage("All notes"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "description": MessageLookupByLibrary.simpleMessage("Description"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'\'t have an account?"),
         "incorrectPassword":
             MessageLookupByLibrary.simpleMessage("Incorrect password"),
         "incorrectUsername":
             MessageLookupByLibrary.simpleMessage("Incorrect username"),
+        "letsWriteWhatsOnYourMind": MessageLookupByLibrary.simpleMessage(
+            "Let\'\'s write what\'\'s on your\nmind!"),
         "logIn": MessageLookupByLibrary.simpleMessage("Log in"),
         "newNote": MessageLookupByLibrary.simpleMessage("New Note"),
         "notesnumberNotes": m0,
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign up"),
-        "username": MessageLookupByLibrary.simpleMessage("Username")
+        "title": MessageLookupByLibrary.simpleMessage("Title"),
+        "username": MessageLookupByLibrary.simpleMessage("Username"),
+        "whatsOnYourMind":
+            MessageLookupByLibrary.simpleMessage("What\'\'s on your\nmind?"),
+        "womanPointingToABoardWithNotes": MessageLookupByLibrary.simpleMessage(
+            "Woman pointing to a board with notes")
       };
 }

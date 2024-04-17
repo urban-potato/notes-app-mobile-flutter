@@ -25,19 +25,29 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "allNotes": MessageLookupByLibrary.simpleMessage("Мои записки"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "description": MessageLookupByLibrary.simpleMessage("Содержание"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Нет аккаунта?"),
         "incorrectPassword":
             MessageLookupByLibrary.simpleMessage("Неверный пароль"),
         "incorrectUsername":
             MessageLookupByLibrary.simpleMessage("Неверный логин"),
+        "letsWriteWhatsOnYourMind":
+            MessageLookupByLibrary.simpleMessage("Давай запишем твои\nмысли!"),
         "logIn": MessageLookupByLibrary.simpleMessage("Вход"),
         "newNote": MessageLookupByLibrary.simpleMessage("Новая записка"),
         "notesnumberNotes": m0,
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
         "signUp": MessageLookupByLibrary.simpleMessage("Зарегистрируйтесь"),
-        "username": MessageLookupByLibrary.simpleMessage("Логин")
+        "title": MessageLookupByLibrary.simpleMessage("Заголовок"),
+        "username": MessageLookupByLibrary.simpleMessage("Логин"),
+        "whatsOnYourMind":
+            MessageLookupByLibrary.simpleMessage("О чем думаешь?"),
+        "womanPointingToABoardWithNotes": MessageLookupByLibrary.simpleMessage(
+            "Женщина указывает на доску с записками")
       };
 }

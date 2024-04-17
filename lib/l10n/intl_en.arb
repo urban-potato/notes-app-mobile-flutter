@@ -23,5 +23,12 @@
   "logIn": "Log in",
   "dontHaveAnAccount": "Don''t have an account?",
   "incorrectUsername": "Incorrect username",
-  "incorrectPassword": "Incorrect password"
+  "incorrectPassword": "Incorrect password",
+  "letsWriteWhatsOnYourMind": "Let''s write what''s on your\nmind!",
+  "whatsOnYourMind": "What''s on your\nmind?",
+  "title": "Title",
+  "description": "Description",
+  "save": "Save",
+  "cancel": "Cancel",
+  "womanPointingToABoardWithNotes": "Woman pointing to a board with notes"
 }

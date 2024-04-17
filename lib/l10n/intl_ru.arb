@@ -11,5 +11,12 @@
   "logIn": "Вход",
   "dontHaveAnAccount": "Нет аккаунта?",
   "incorrectUsername": "Неверный логин",
-  "incorrectPassword": "Неверный пароль"
+  "incorrectPassword": "Неверный пароль",
+  "letsWriteWhatsOnYourMind": "Давай запишем твои\nмысли!",
+  "whatsOnYourMind": "О чем думаешь?",
+  "title": "Заголовок",
+  "description": "Содержание",
+  "save": "Save",
+  "cancel": "Cancel",
+  "womanPointingToABoardWithNotes": "Женщина указывает на доску с записками"
 }

@@ -169,6 +169,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Let''s write what''s on your\nmind!`
+  String get letsWriteWhatsOnYourMind {
+    return Intl.message(
+      'Let\'\'s write what\'\'s on your\nmind!',
+      name: 'letsWriteWhatsOnYourMind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What''s on your\nmind?`
+  String get whatsOnYourMind {
+    return Intl.message(
+      'What\'\'s on your\nmind?',
+      name: 'whatsOnYourMind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Title`
+  String get title {
+    return Intl.message(
+      'Title',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Description`
+  String get description {
+    return Intl.message(
+      'Description',
+      name: 'description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Woman pointing to a board with notes`
+  String get womanPointingToABoardWithNotes {
+    return Intl.message(
+      'Woman pointing to a board with notes',
+      name: 'womanPointingToABoardWithNotes',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
