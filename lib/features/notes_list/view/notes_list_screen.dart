@@ -152,6 +152,7 @@ class _NotesTilesList extends StatelessWidget {
     return Expanded(
       child: ListView.builder(
         itemCount: notesList.length,
+        // itemExtent: 150,
         itemBuilder: (BuildContext context, int index) {
           final note = notesList[index];
 

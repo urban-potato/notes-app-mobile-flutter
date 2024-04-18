@@ -11,15 +11,17 @@ class NoteTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(vertical: 10),
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        color: AppColors.secondaryDark,
-      ),
-      child: _NoteInfo(note: note),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            color: AppColors.secondaryDark,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            child: _NoteInfo(note: note),
+          )),
     );
   }
 }
@@ -60,6 +62,8 @@ class _NoteTitle extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 10),
       child: Text(
         title,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
         style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 20),
       ),
     );
@@ -79,7 +83,8 @@ class _NoteDescriptionAndTime extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _NoteDescription(description: note.description),
+        if (note.description != null && note.description != '')
+          _NoteDescription(description: note.description),
         const SizedBox(height: 7),
         _NoteTime(dateTime: note.dateTime)
       ],
@@ -93,12 +98,14 @@ class _NoteDescription extends StatelessWidget {
     required this.description,
   });
 
-  final String description;
+  final String? description;
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      description,
+      description ?? '',
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
       style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 18),
     );
   }
@@ -120,6 +127,8 @@ class _NoteTime extends StatelessWidget {
         const SizedBox(width: 6),
         Text(
           dateTime,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
           style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 15),
         ),
       ],
