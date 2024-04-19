@@ -19,7 +19,7 @@ class NoteTile extends StatelessWidget {
             color: AppColors.secondaryDark,
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
             child: _NoteInfo(note: note),
           )),
     );
@@ -83,9 +83,10 @@ class _NoteDescriptionAndTime extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if (note.description != null && note.description != '')
+        if (note.description != null && note.description != '') ...[
           _NoteDescription(description: note.description),
-        const SizedBox(height: 7),
+          const SizedBox(height: 10),
+        ],
         _NoteTime(dateTime: note.dateTime)
       ],
     );

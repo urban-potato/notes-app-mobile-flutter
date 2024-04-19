@@ -24,6 +24,9 @@ final darkTheme = ThemeData(
   listTileTheme: ListTileThemeData(
     iconColor: AppColors.secondaryTextDark,
   ),
+  iconTheme: IconThemeData(
+    color: AppColors.secondaryTextDark,
+  ),
   textTheme: GoogleFonts.interTextTheme(
     TextTheme(
       titleLarge: TextStyle(
