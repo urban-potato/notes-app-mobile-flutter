@@ -37,8 +37,7 @@ abstract class TempData {
     ),
     const Note(
       id: 2,
-      title:
-          'A story about cute animals, that do funny things',
+      title: 'A story about my cat, that loves milk',
       description: "Full description 3",
       dateTime: '2024-04-11 17:58',
     ),
