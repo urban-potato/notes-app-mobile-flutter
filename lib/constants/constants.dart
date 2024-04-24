@@ -8,6 +8,7 @@ abstract class AppColors {
   static Color thirdDark = const Color(0xFF7C7C7C);
   static Color mainGreenDark = const Color(0xFF066736);
   static Color mainRed = const Color(0xFFE32C2C);
+  static Color fourthDark = const Color(0xFF484848);
 
   static Color mainTextDark = Colors.white;
   static Color secondaryTextDark = const Color(0xFF939393);
@@ -18,6 +19,15 @@ abstract class AppMeasures {
   static double padding(BuildContext context) {
     return MediaQuery.of(context).size.width * 0.075;
   }
+}
+
+abstract class LocalesKeys {
+  static const english = 'en';
+  static const russian = 'ru';
+}
+
+abstract class SharedPreferencesKeys {
+  static const locale = 'locale';
 }
 
 abstract class TempData {

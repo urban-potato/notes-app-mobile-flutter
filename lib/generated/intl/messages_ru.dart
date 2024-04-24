@@ -20,12 +20,12 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ru';
 
-  static String m0(notesNumber) => "Всего записок: ${notesNumber}";
+  static String m0(notesNumber) => "${notesNumber} записок";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "allNotes": MessageLookupByLibrary.simpleMessage("Мои записки"),
-        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "allNotes": MessageLookupByLibrary.simpleMessage("Записки"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Отменить"),
         "description": MessageLookupByLibrary.simpleMessage("Содержание"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Нет аккаунта?"),
@@ -40,7 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "notesnumberNotes": m0,
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
-        "save": MessageLookupByLibrary.simpleMessage("Save"),
+        "save": MessageLookupByLibrary.simpleMessage("Сохранить"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
         "signUp": MessageLookupByLibrary.simpleMessage("Зарегистрируйтесь"),
         "title": MessageLookupByLibrary.simpleMessage("Заголовок"),

@@ -1,8 +1,8 @@
 {
   "@@locale": "ru",
-  "allNotes": "Мои записки",
+  "allNotes": "Записки",
   "newNote": "Новая записка",
-  "notesnumberNotes": "Всего записок: {notesNumber}",
+  "notesnumberNotes": "{notesNumber} записок",
   "@notesnumberNotes": {
     "description": "Сообщение, сообщающее пользователю количество его заметок",
     "placeholders": {
@@ -25,7 +25,7 @@
   "whatsOnYourMind": "О чем думаешь?",
   "title": "Заголовок",
   "description": "Содержание",
-  "save": "Save",
-  "cancel": "Cancel",
+  "save": "Сохранить",
+  "cancel": "Отменить",
   "womanPointingToABoardWithNotes": "Женщина указывает на доску с записками"
 }
